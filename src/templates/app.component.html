@@ -1,0 +1,40 @@
+<div class="row"> 
+<div id="navArea" class="col s12 m1 l1">
+	<div class="navWrapper">
+		<div class="navCon">
+			<a [routerLink]="['/home']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-home fa-2x">
+			</i></a></div>
+		<div class="navCon">
+			<a [routerLink]="['/announcements']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-bullhorn fa-2x">
+			</i></a></div>
+		<div class="navCon">
+			<a [routerLink]="['/calendar']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-calendar-o fa-2x">
+			</i></a></div>
+		<div class="navCon">
+			<a [routerLink]="['/board']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-users fa-2x">
+			</i></a></div>
+		<div class="navCon">
+            <a [routerLink]="['/sponsors']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-briefcase fa-2x">
+            </i></a></div>
+		<div class="navCon">
+			<a [routerLink]="['/lab']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-map-o fa-2x">
+			</i></a></div>
+		<div class="navCon">
+			<a [routerLink]="['/contact']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-envelope fa-2x">
+			</i></a></div>
+		<div class="navCon">
+			<a [routerLink]="['/about']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-info-circle fa-2x">
+			</i></a></div>
+	</div>
+</div>
+<div class="bodyDiv">
+    <router-outlet></router-outlet>
+</div>

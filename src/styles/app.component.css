@@ -1,0 +1,62 @@
+.bodyDiv {
+    height: 100%;
+    overflow-y: auto;
+    background-color: #009FDA;
+    width: auto;
+}
+
+.fa {
+    color: #009FDA;
+}
+
+.fa:hover {
+    color: #EEEEEE;
+}
+
+.a:active {
+    text-color: black;
+}
+
+.navWrapper {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navCon {
+    display: inline-block;
+    padding: 10px 15px; 
+}
+
+#navArea {
+    z-index: 5;
+    background-color: #006699;
+    position: fixed;
+    padding: 0;
+}
+
+.row {
+    margin-bottom: 0; 
+}
+
+@media screen and (min-width: 360px) {
+    .navCon {
+        padding: 10px 21px; 
+    } 
+}
+
+@media screen and (min-width: 601px) {
+    .navWrapper {
+        display: inline; 
+    }
+    .navCon {
+        display: block;
+        padding: 10px 10px;
+        text-align: center; 
+    }
+    #navArea {
+        position: static;
+        height: 100vh;
+        width: 70px;
+    }
+}
