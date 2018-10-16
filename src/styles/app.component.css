@@ -63,7 +63,7 @@
 
 .description p {
   position: absolute;
-  opacity: 1;
+  opacity: 0;
   color: white;
   /* top: -1px; */
   left: 5.7rem;

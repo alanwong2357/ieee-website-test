@@ -71,3 +71,22 @@ h3 {
   margin-bottom: 15px;
   color: #333;
 }
+
+.slider.micromouse .slides li img {
+    background-size: auto 25rem;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    object-fit: contain;
+}
+
+.col s12 l6 {
+  column-gap: 20rem;
+}
+
+.table-of-contents:hover {
+  cursor: pointer;
+}
+
+/* a:before {
+    content:"• ";
+} */
