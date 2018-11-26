@@ -16,11 +16,6 @@ export class ProjectsComponent implements OnInit {
     var instances = M.Slider.init(elems, this.options);
   }
 
-  // goTo(location: string): void {
-  //   window.location.hash = location;
-  //   window.location.hash = ''; window.location.hash = location;
-  // }
-
   scrollToElement($element): void {
     console.log($element);
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
