@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['../styles/announcements.component.css']
 })
 
-export class AnnouncementsComponent {
+export class AnnouncementsComponent implements OnInit {
+  options = {};
+  elems = {};
 
-}
+  ngOnInit() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems, this.options);
+  }
