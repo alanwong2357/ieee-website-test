@@ -43,9 +43,10 @@
     margin-bottom: 0;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 450px) {
     .navCon {
         padding: 10px 21px;
+        bottom: 1rem;
     }
 
     #navArea {
@@ -53,29 +54,46 @@
         background-color: #006699;
         position: fixed;
         padding: 0;
-        /* height: 100vh; */
-        /* width: 70px; */
+        height: 100vh;
+        transition: ease-in-out 400ms;
+        width: 0px;
+        overflow: hidden;
     }
 
-    /* .description {
-      display: none;
-    } */
+    .toggleNavbarStyle {
+      width: 185px !important;
+      transition: ease-in-out 600ms !important;
+    }
+
+    #nav-bars {
+      text-align: left;
+      margin: 0;
+      position: absolute;
+      left: .1rem;
+      top: .6rem;
+    }
+
+    .fa {
+        left: -.7rem;
+    }
+
+    #mobile-title {
+      text-align: center;
+      font-size: 1.5rem;
+      color: white;
+      margin: auto;
+    }
 
     .mobile-toggle {
       width: 100%;
       padding: 10px 0px 10px 0px;
       text-align: left;
-      /* box-sizing: border-box; */
+      background-color: #006699;
     }
 
     .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
       padding: 0 1rem;
     }
-
-    /* .navWrapper:hover,nav.navArea.expanded {
-      width:220px;
-      overflow:visible;
-    } */
 
     .navWrapper {
       background:#006699;
@@ -85,9 +103,6 @@
       left:0;
       width:220px;
       overflow:hidden;
-      /* -webkit-transition:width .05s linear;
-      transition:width .05s linear;
-      -webkit-transform:translateZ(0) scale(1,1); */
       z-index:1000;
     }
 
@@ -101,22 +116,18 @@
       position:relative;
       display:table-cell;
       vertical-align:middle;
-      width:190px;
-      /* left: 3rem; */
+      width:120px;
+      left: 1rem;
       text-align: left;
     }
 
     .navWrapper li>a {
       position:relative;
       display:table;
-      /* -webkit-transform:translateZ(0) scale(1,1);
-      -webkit-transition:all .1s linear;
-      transition:all .1s linear; */
-
     }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 451px) {
     .navWrapper {
         display: inline;
     }

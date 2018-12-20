@@ -9,5 +9,11 @@ import { Component } from '@angular/core';
   ]
 })
 export class AppComponent {
-  title = 'IEEE UCI';  // Create banner image later
+  title = 'IEEE at UCI';  // Create banner image later
+
+  toggleNavbar = false;
+
+  ontoggleNavbar() {
+    this.toggleNavbar = !this.toggleNavbar;
+  }
 }

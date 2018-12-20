@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent }          from './home.component';
-import { AnnouncementsComponent } from './announcements.component';
+import { EventsComponent }        from './events.component';
 import { CalendarComponent }      from './calendar.component';
 import { LabComponent }           from './lab.component';
 import { AboutComponent }         from './about.component';
@@ -23,8 +23,8 @@ const appRoutes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'announcements',
-    component: AnnouncementsComponent
+    path: 'events',
+    component: EventsComponent
   },
   {
     path: 'calendar',
@@ -63,14 +63,13 @@ const appRoutes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(appRoutes)
-    // RouterModule.forRoot(appRoutes, {scrollPositionRestoration: 'enabled'})
   ],
   exports: [
     RouterModule
   ],
   declarations: [
     HomeComponent,
-    AnnouncementsComponent,
+    EventsComponent,
     CalendarComponent,
     LabComponent,
     AboutComponent,
