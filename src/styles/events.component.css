@@ -36,7 +36,7 @@ h2 {
 }
 
 h4 {
-    font-size: 14px;
+    font-size: 16px;
     color: #3399FF;
     letter-spacing: 1px;
     margin-bottom: 25px;
@@ -74,4 +74,8 @@ h3 {
 
 .col s12 l6 {
   column-gap: 20rem;
+}
+
+.table-of-contents:hover {
+  cursor: pointer;
 }

@@ -15,4 +15,9 @@ export class EventsComponent implements OnInit {
     var elems = document.querySelectorAll('.slider');
     var instances = M.Slider.init(elems, this.options);
   }
+
+  scrollToElement($element): void {
+    console.log($element);
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
 }
